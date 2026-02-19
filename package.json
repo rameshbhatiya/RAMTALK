@@ -1,0 +1,24 @@
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/package.json b/package.json
+new file mode 100644
+index 0000000000000000000000000000000000000000..bbcb14e8f5096e30791dced8960bad17607bc995
+--- /dev/null
++++ b/package.json
+@@ -0,0 +1,14 @@
++{
++  "name": "ramtalk",
++  "version": "1.0.0",
++  "description": "Reels + private chat + voice/video call starter app",
++  "main": "server.js",
++  "scripts": {
++    "start": "node server.js"
++  },
++  "dependencies": {
++    "express": "^4.19.2",
++    "socket.io": "^4.7.5",
++    "uuid": "^9.0.1"
++  }
++}
+ 
+EOF
+)
