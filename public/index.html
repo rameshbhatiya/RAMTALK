@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RAMTALK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>RAMTALK</h1>
+  <p>Reels + private chat + voice/video calls</p>
+
+  <h2>1) Login</h2>
+  <input id="user" placeholder="Your user id (e.g., alex)">
+  <button onclick="join()">Join</button>
+
+  <h2>2) Reels feed</h2>
+  <div id="reels"></div>
+
+  <h2>3) Chat</h2>
+  <input id="msg" placeholder="Type message">
+  <button onclick="send()">Send</button>
+  <ul id="messages"></ul>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
