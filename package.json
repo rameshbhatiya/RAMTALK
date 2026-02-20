@@ -1,3 +1,6 @@
+"scripts": {
+  "start": "node server.js"
+}
 diff --git a/package.json b/package.json
 new file mode 100644
 index 0000000000000000000000000000000000000000..bbcb14e8f5096e30791dced8960bad17607bc995
